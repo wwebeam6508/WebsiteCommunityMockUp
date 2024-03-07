@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Navigation, classNames } from './Layout';
 
 const Footer = (props: any) => {

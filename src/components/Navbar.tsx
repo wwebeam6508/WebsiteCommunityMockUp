@@ -1,7 +1,6 @@
 
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, EnvelopeIcon, XMarkIcon, UserGroupIcon, PlusCircleIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 import { Navigation, classNames } from './Layout'
 import { CogIcon } from '@heroicons/react/16/solid'
 
