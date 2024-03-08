@@ -1,15 +1,15 @@
 import React from 'react';
-import { Post } from '../layout/TwoGrid.layout';
-import { ChatBubbleOvalLeftIcon, HandRaisedIcon, HandThumbUpIcon } from '@heroicons/react/16/solid';
+import { LowerPost } from '../layout/TwoGrid.layout';
+import { ChatBubbleOvalLeftIcon, HandThumbUpIcon, CurrencyDollarIcon } from '@heroicons/react/16/solid';
 
-interface RecommendProps {
+interface InvestmentPostProps {
   // Define the props for your component here
-  posts: Post[];
+  posts: LowerPost[];
   className: string;
 }
 
-const Card = ({ user, excerpt, time, votes, comments, image }: Post) => (
-  <div className="max-w-md bg-white rounded-lg shadow-sm flex p-4 space-x-4">
+const Card = ({ user, excerpt, time, votes, comments, image, tags }: LowerPost) => (
+  <div className="bg-white rounded-lg shadow-sm flex p-4 space-x-4">
     {image && (
       <img src={image} alt={user} className="w-20 h-20 rounded-lg object-cover" /> // Adjust size as necessary
     )}
@@ -18,6 +18,15 @@ const Card = ({ user, excerpt, time, votes, comments, image }: Post) => (
       <p className="text-sm">{excerpt}</p>
       <div className="flex justify-between items-center text-sm text-gray-600">
         <span>{time}</span>
+        {
+          tags && (
+            <div className="flex hidden sm:flex items-center space-x-1">
+              {tags.map((tag, index) => (
+                <a href='#' key={index} className="text-xs bg-gray-200 rounded-full px-2 py-1">{tag}</a>
+              ))}
+            </div>
+          )
+        }
         <div className="flex items-center space-x-4">
           <span className="flex items-center">
             <HandThumbUpIcon className="h-5 w-5 mr-1" aria-hidden="true" />{votes}
@@ -31,16 +40,16 @@ const Card = ({ user, excerpt, time, votes, comments, image }: Post) => (
   </div>
 );
 
-const Recommend: React.FC<RecommendProps> = ({ posts, className }) => {
+const InvestmentPost: React.FC<InvestmentPostProps> = ({ posts, className }) => {
   // Implement the component logic here
   return (
     <div className={`border-t-2 border-gray-200 p-8 ${className}`}>
       <div className="mx-auto">
         <div className='flex'>
-          <HandRaisedIcon className="h-8 w-8 mr-1" aria-hidden="true" />
-          <h1 className="text-2xl font-semibold">Recommend</h1>
+          <CurrencyDollarIcon className="h-8 w-8 mr-1" aria-hidden="true" />
+          <h1 className="text-2xl font-semibold">Investment</h1>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2  gap-6">
+        <div className="grid grid-cols-1 xl:grid-cols-2 md:grid-cols-2  gap-1">
           {posts.map((post, index) => (
             <Card key={index} {...post} />
           ))}
@@ -51,4 +60,4 @@ const Recommend: React.FC<RecommendProps> = ({ posts, className }) => {
   );
 };
 
-export default Recommend;
+export default InvestmentPost;

@@ -3,8 +3,9 @@ import Navbar from './Navbar';
 import Secondbar from './Secondbar';
 import { BellAlertIcon, EnvelopeIcon, HandThumbUpIcon, HomeIcon, PlusCircleIcon, StarIcon, TvIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 import Footer from './Footer';
-import { MagnifyingGlassCircleIcon } from '@heroicons/react/16/solid';
+import { CalendarDaysIcon, MagnifyingGlassCircleIcon } from '@heroicons/react/16/solid';
 import SearchBar from './SearchBar';
+import { ArrowLeftStartOnRectangleIcon } from '@heroicons/react/20/solid';
 
 interface LayoutProps {
   children: ReactNode;
@@ -37,7 +38,9 @@ const secondbarMenu = [
   { name: 'My Feed', icon: <TvIcon className="block h-6 w-6" aria-hidden="true" />, href: '#', current: false },
   { name: 'Panbop Pick', icon: <HandThumbUpIcon className="block h-6 w-6" aria-hidden="true" />, href: '#', current: false },
   { name: 'Panbop Hitz', icon: <StarIcon className="block h-6 w-6" aria-hidden="true" />, href: '#', current: false },
-  { name: 'Explore', icon: <MagnifyingGlassCircleIcon className="block h-6 w-6" aria-hidden="true" />, href: '#', current: false }
+  { name: 'Explore', icon: <MagnifyingGlassCircleIcon className="block h-6 w-6" aria-hidden="true" />, href: '#', current: false },
+  { name: 'แลกพอยต์', icon: <ArrowLeftStartOnRectangleIcon className="block h-6 w-6" aria-hidden="true" />, href: '#', current: false },
+  { name: 'กิจกรรม', icon: <CalendarDaysIcon className="block h-6 w-6" aria-hidden="true" />, href: '#', current: false }
 ]
 
 export function classNames(...classes: string[]) {

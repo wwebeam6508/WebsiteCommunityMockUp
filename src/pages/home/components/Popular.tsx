@@ -1,6 +1,7 @@
 import React from 'react';
 import { Post } from '../layout/TwoGrid.layout';
 import { ChatBubbleOvalLeftIcon, HandThumbUpIcon } from '@heroicons/react/16/solid';
+import { UserGroupIcon } from '@heroicons/react/24/solid';
 
 interface PopularProps {
   // Define the props for your component here
@@ -36,12 +37,16 @@ const Popular: React.FC<PopularProps> = ({ posts, className }) => {
   return (
     <div className={`border-t-2 border-gray-200 p-8 ${className}`}>
       <div className="mx-auto">
-        <h1 className="text-2xl font-semibold">Most Popular</h1>
+        <div className='flex'>
+          <UserGroupIcon className="h-8 w-8 mr-1" aria-hidden="true" />
+          <h1 className="text-2xl font-semibold">Most Popular</h1>
+        </div>
         <div className="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2  gap-6">
           {posts.map((post, index) => (
             <Card key={index} {...post} />
           ))}
         </div>
+        <a href="#" className="flex mt-5 justify-center text-gray-700 hover:bg-gray-300">ดูเพิ่ม</a>
       </div>
     </div>
   );

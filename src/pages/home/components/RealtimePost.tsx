@@ -1,4 +1,4 @@
-import { ChatBubbleOvalLeftIcon, HandThumbUpIcon } from '@heroicons/react/16/solid';
+import { ChatBubbleOvalLeftIcon, ClockIcon, HandThumbUpIcon } from '@heroicons/react/16/solid';
 import React from 'react';
 
 
@@ -49,12 +49,16 @@ const Card: React.FC<CardProps> = ({ user, content, time, votes, comments, image
 const RealtimePost = () => (
   <div className="border-t-2 border-gray-200 p-8">
     <div className="mx-auto">
-      <h1 className="text-2xl font-semibold">Most Recent</h1>
+      <div className='flex'>
+        <ClockIcon className="h-8 w-8 mr-1" aria-hidden="true" />
+        <h1 className="text-2xl font-semibold">Most Popular</h1>
+      </div>
       <div className="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2  gap-6">
         {posts.map((post, index) => (
           <Card key={index} {...post} />
         ))}
       </div>
+      <a href="#" className="flex mt-5 justify-center text-gray-700 hover:bg-gray-300">ดูเพิ่ม</a>
     </div>
   </div>
 );

@@ -16,7 +16,7 @@ const highlightItems: HighlightItem[] = [
     thumbnail: 'https://via.placeholder.com/800x600',
   },
   {
-    title: '🎧 PANTIP PODCAST 🎧 3 อันดับกระทู้ฮิตบนพันทิปประจำ',
+    title: '🎧 PANBOP PODCAST 🎧 3 อันดับกระทู้ฮิตบนพันทิปประจำ',
     thumbnail: 'https://via.placeholder.com/800x600',
   },
   {
