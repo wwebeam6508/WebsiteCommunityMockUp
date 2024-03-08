@@ -2,7 +2,7 @@ import React from 'react';
 import { Post } from '../layout/TwoGrid.layout';
 import { ChatBubbleOvalLeftIcon, HandThumbUpIcon } from '@heroicons/react/16/solid';
 
-interface RecommendProps {
+interface PopularProps {
   // Define the props for your component here
   posts: Post[];
   className: string;
@@ -31,12 +31,12 @@ const Card = ({ user, excerpt, time, votes, comments, image }: Post) => (
   </div>
 );
 
-const Recommend: React.FC<RecommendProps> = ({ posts, className }) => {
+const Popular: React.FC<PopularProps> = ({ posts, className }) => {
   // Implement the component logic here
   return (
     <div className={`border-t-2 border-gray-200 p-8 ${className}`}>
       <div className="mx-auto">
-        <h1 className="text-2xl font-semibold">Recommend</h1>
+        <h1 className="text-2xl font-semibold">Most Popular</h1>
         <div className="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2  gap-6">
           {posts.map((post, index) => (
             <Card key={index} {...post} />
@@ -47,4 +47,4 @@ const Recommend: React.FC<RecommendProps> = ({ posts, className }) => {
   );
 };
 
-export default Recommend;
+export default Popular;

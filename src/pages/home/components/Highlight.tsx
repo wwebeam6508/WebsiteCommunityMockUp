@@ -65,7 +65,7 @@ const Highlight = () => {
           {highlightItems.map((item, index) => (
             <div key={index} className="carousel-cell h-96 w-1/2 sm:w-1/4 flex justify-center">
               <a href="#" className="w-full flex flex-col items-center">
-                <img src={item.thumbnail} alt={item.title} className="w-full h-full object-cover" />
+                <img src={item.thumbnail} alt={item.title} width={"640px"} height={"640px"} className="object-cover" />
                 <div className="p-4 w-full h-96">
                   <h1 className="text-xl font-bold text-black text-center">{item.title}</h1>
                 </div>

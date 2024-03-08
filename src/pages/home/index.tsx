@@ -3,7 +3,7 @@ import Announce from './components/Announce';
 import Menu from './components/Menu';
 import Highlight from './components/Highlight';
 import RealtimePost from './components/RealtimePost';
-import RecommendCatagoryLayout from './layout/RecommendCatagory.layout';
+import TwoGrid from './layout/TwoGrid.layout';
 
 const Home: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       <Menu />
       <Highlight />
       <RealtimePost />
-      <RecommendCatagoryLayout />
+      <TwoGrid />
     </>
   );
 };
