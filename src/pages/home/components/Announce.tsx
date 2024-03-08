@@ -27,16 +27,16 @@ const Announce: React.FC = () => {
           <div key={index} className={`py-4 ${index === 0 ? 'pt-4' : 'border-t border-gray-300'}`}> {/* Adjust padding and conditional border */}
               <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-3">
-                      {announce.type === "Highlight" && (
-                          <span className="bg-yellow-300 px-2 py-1 rounded-full text-xs text-black">Highlight</span>
-                      )}
-                      {announce.type === "Activity" && (
-                          <span className="bg-blue-400 px-2 py-1 rounded-full text-xs text-black">Activity</span>
-                      )}
-                      {announce.type === "Announce" && (
-                          <span className="bg-green-500 px-2 py-1 rounded-full text-xs text-white">Announce</span>
-                      )}
-                      <span className="text-xs font-bold">{announce.text}</span>
+                    {announce.type === "Highlight" && (
+                        <span className="bg-yellow-300 px-2 py-1 rounded-full text-xs text-black">Highlight</span>
+                    )}
+                    {announce.type === "Activity" && (
+                        <span className="bg-blue-400 px-2 py-1 rounded-full text-xs text-black">Activity</span>
+                    )}
+                    {announce.type === "Announce" && (
+                        <span className="bg-green-500 px-2 py-1 rounded-full text-xs text-white">Announce</span>
+                    )}
+                    <span className="text-xs font-bold">{announce.text}</span>
                   </div>
               </div>
           </div>

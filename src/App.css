@@ -1,0 +1,12 @@
+/* Add these styles to your global CSS file or inside a <style> tag in your component */
+.navbar-transition {
+  transition: transform 0.3s ease, opacity 0.3s ease, height 0.3s ease;
+}
+
+.navbar-hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  height: 0px;
+  /* Set this to your desired "small" height */
+  transition: height 0.3s ease;
+}

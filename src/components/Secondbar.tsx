@@ -19,7 +19,6 @@ const MenuItem: FC<{  item: SecondbarMenu }> = ({ item }) => {
   );
 };
 
-
 const Secondbar: FC<{ secondbarMenu: SecondbarMenu[] }> = ({ secondbarMenu }) => {
 
 

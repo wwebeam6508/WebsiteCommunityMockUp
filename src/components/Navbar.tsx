@@ -13,21 +13,21 @@ export default function Navbar(props: any) {
 
   return (
     <Disclosure as="nav" className="bg-white-800">
-      {({  }) => (
+      {({ }) => (
         <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             {/* Invisible spacer to match the right side's width if needed */}
             <div className="flex-1 flex justify-start items-center">
               <CogIcon className="block h-6 w-6 invisible sm:visible" aria-hidden="true" />
             </div>
-            
+
             {/* Center section for navigation items */}
             <div className="flex flex-1 justify-center items-center">
               <div className="hidden sm:flex flex space-x-4">
-                {navigation.map((item: Navigation) => (
+                {navigation.map((item: Navigation, index: any) => (
                   item.position === 'center' && (
                     <a
-                      key={item.name ? item.name : random()}
+                      key={index}
                       href={item.href}
                       className={classNames(
                         item.current ? 'bg-white-500 text-black font-bold' : 'text-gray-500 hover:bg-gray-300 hover:text-gray-700 font-medium',
