@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Flickity, { FlickityOptions } from 'react-flickity-component';
 import 'flickity/css/flickity.css';
 interface HighlightItem {

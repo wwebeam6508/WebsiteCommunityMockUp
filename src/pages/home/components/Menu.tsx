@@ -1,7 +1,7 @@
 import { UserGroupIcon, TvIcon, CameraIcon, MusicalNoteIcon, CalendarIcon, BookOpenIcon, HandRaisedIcon, GlobeAltIcon, PhoneIcon, PhotoIcon, DocumentTextIcon, BriefcaseIcon, ShoppingCartIcon, ClockIcon, FireIcon, ShieldCheckIcon, AdjustmentsHorizontalIcon } from '@heroicons/react/24/outline'; // Import more as needed
 
 import React, { ReactNode, useState } from 'react';
-import { Button, CustomFlowbiteTheme, Modal } from 'flowbite-react';
+import { Button, Modal } from 'flowbite-react';
 interface MenuItem {
   title: string;
   icon: ReactNode;

@@ -1,4 +1,4 @@
-import { ChatBubbleBottomCenterIcon, ChatBubbleOvalLeftIcon, HandThumbUpIcon } from '@heroicons/react/16/solid';
+import { ChatBubbleOvalLeftIcon, HandThumbUpIcon } from '@heroicons/react/16/solid';
 import React from 'react';
 
 

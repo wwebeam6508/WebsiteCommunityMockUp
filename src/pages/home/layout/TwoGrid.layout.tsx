@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Recommend from '../components/Recommend';
 import Category from '../components/Catagory';
 import Group from '../components/Group';
