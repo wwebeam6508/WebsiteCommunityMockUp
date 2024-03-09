@@ -11,7 +11,7 @@ interface Post {
   image?: string; // Optional, some posts might not have images
 }
 const posts = [
-  { user: 'Pantip Happy Prize', content: 'ชวนแชร์ปัญหาผิวเป็นสิวและวิธีการดูแลของคุณ ลุ้นรับเซรั่มใหม่ล่าสุดจากไบโอเดอร์มา! 100 รางวัล', time: '6 น.ที่แล้ว', votes: 117, comments: 3, image: 'https://via.placeholder.com/800x600' },
+  { user: 'Panbop Happy Prize', content: 'ชวนแชร์ปัญหาผิวเป็นสิวและวิธีการดูแลของคุณ ลุ้นรับเซรั่มใหม่ล่าสุดจากไบโอเดอร์มา! 100 รางวัล', time: '6 น.ที่แล้ว', votes: 117, comments: 3, image: 'https://via.placeholder.com/800x600' },
   { user: 'เที่ยวสบายสบาย', content: 'มิจฉาชีพ มีรูปแบบใหม่มาอีกแล้ว?', time: '5 น.ที่แล้ว', votes: 150, comments: 4, image: 'https://via.placeholder.com/800x600' },
   { user: 'สมาชิกหมายเลข 1049607', content: 'พี่สาวลาออกจากเงินเดือน 13,500 มารับเงินเดือน 6,500 บอกเพื่อความมั่นคงในอนาคต', time: '4 น.ที่แล้ว', votes: 200, comments: 5, image: 'https://via.placeholder.com/800x600' },
   { user: 'สมาชิกหมายเลข 7535362', content: 'การกลับมาของเธอ พาทีมชาติให้ได้ไปโอลิมปิก 2024 จากบราซิลสู่ไทยแลนด์', time: '3 น.ที่แล้ว', votes: 250, comments: 6, image: 'https://via.placeholder.com/800x600' },

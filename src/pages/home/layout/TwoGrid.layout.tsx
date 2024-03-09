@@ -116,7 +116,7 @@ const categories: CategoryTag[] = [
 const groups: GroupTag[] = [
   { id: 1, name: 'AF 12' },
   { id: 2, name: 'AF Fan Club' },
-  { id: 3, name: 'BTS & ARMY in Pantip' },
+  { id: 3, name: 'BTS & ARMY in Panbop' },
   { id: 4, name: 'FASHIONISTA CLUB' },
 ]
 
@@ -303,11 +303,11 @@ const policyList = [
   "คำแนะนำการโพสต",
   "นโยบายเกี่ยวกับข้อมูลส่วนบุคคล",
   "สิทธิ์การใช้งานของสมาชิก",
-  "ติดต่อทีมงาน Pantip",
+  "ติดต่อทีมงาน Panbop",
   "ติดต่อลงโฆษณา",
-  "ร่วมงานกับ Pantip",
-  "Download App Pantip",
-  "Pantip Certified Developer"]
+  "ร่วมงานกับ Panbop",
+  "Download App Panbop",
+  "Panbop Certified Developer"]
 const TwoGrid = () => {
   return (
     <div >
@@ -331,7 +331,7 @@ const TwoGrid = () => {
           <Group groups={groups} className="items-center" />
           <div className="flex flex-col items-center">
             <img src="https://via.placeholder.com/800x600" alt="thumbnail" className="w-50 h-50 object-cover" />
-            <p className="text-sm text-gray-600 mt-4">ข่าวดี! เพื่อนๆ สามารถสร้างรายได้ไปพร้อมกับใช้งาน Pantip ได้แล้วนะ</p>
+            <p className="text-sm text-gray-600 mt-4">ข่าวดี! เพื่อนๆ สามารถสร้างรายได้ไปพร้อมกับใช้งาน Panbop ได้แล้วนะ</p>
           </div>
           <Bloggang bloggang={gloggangPosts} className="items-center" />
           <div className="flex flex-col items-center">
